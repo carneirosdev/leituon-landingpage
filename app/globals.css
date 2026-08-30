@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+/*
+ * Tema LeituOn — a mesma paleta da app (lib/app/theme/app_colors.dart):
+ * o ardósia é a cor estrutural, o âmbar é o acento do «On» e o índigo a
+ * secundária. O site e a app têm de ler como a mesma marca.
+ */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light;
+
+  /* Marca — fixas nos dois modos. */
+  --brand-slate: #1e293b;
+  --brand-amber: #f59e0b;
+  --brand-indigo: #6366f1;
+
+  /* Superfícies e texto — modo claro. */
+  --canvas: #f8fafc;
+  --surface: #ffffff;
+  --elevated: #f1f5f9;
+  --ink: #0f172a;
+  --ink-muted: #64748b;
+  --line: #e2e8f0;
+
+  /* Papéis: em modo claro o botão principal é ardósia. */
+  --primary: var(--brand-slate);
+  --on-primary: #ffffff;
+  --accent: var(--brand-amber);
+  --second: var(--brand-indigo);
+
+  /* Cores de domínio — ritmo de leitura e sequência. */
+  --ahead: #059669;
+  --on-track: #0284c7;
+  --behind: #dc2626;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --canvas: #0f172a;
+  --surface: #1e293b;
+  --elevated: #263449;
+  --ink: #f8fafc;
+  --ink-muted: #94a3b8;
+  --line: #334155;
+
+  /* O mesmo alfabeto invertido: em fundo escuro é o âmbar que carrega o
+     botão principal, tal como no `_darkScheme` da app. */
+  --primary: #fbbf24;
+  --on-primary: #0f172a;
+  --accent: #fbbf24;
+  --second: #818cf8;
+
+  --ahead: #34d399;
+  --on-track: #38bdf8;
+  --behind: #f87171;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-elevated: var(--elevated);
+  --color-ink: var(--ink);
+  --color-muted: var(--ink-muted);
+  --color-line: var(--line);
+
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-accent: var(--accent);
+  --color-second: var(--second);
+
+  --color-ahead: var(--ahead);
+  --color-on-track: var(--on-track);
+  --color-behind: var(--behind);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  body {
+    background-color: var(--canvas);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* O anel do logótipo é o motivo da marca: reaparece como foco. */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  /* Título de secção: pesado, apertado, sem cair em maiúsculas. */
+  .text-display {
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+
+/* Entrada suave das secções ao chegarem ao ecrã — desligada para quem pediu
+   menos movimento ao sistema operativo. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition:
+      opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .reveal[data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Texto corrido das páginas legais: uma medida confortável de leitura e
+   espaçamento suficiente para se percorrer sem cansar. */
+@layer components {
+  .legal h2 {
+    margin-top: 2.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    scroll-margin-top: 6rem;
+  }
+
+  .legal p,
+  .legal li {
+    color: var(--ink-muted);
+    line-height: 1.75;
+  }
+
+  .legal p + p,
+  .legal ul + p {
+    margin-top: 1rem;
+  }
+
+  .legal ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-left: 1.15rem;
+    list-style: disc;
+  }
+
+  .legal ul::marker,
+  .legal li::marker {
+    color: var(--accent);
+  }
+
+  .legal strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .legal a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--accent);
+  }
+}

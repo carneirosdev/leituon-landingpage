@@ -1,0 +1,17 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>LeituOn</title>
+  <desc>Ícone LeituOn: anel de progresso circular com um marcador de página no centro</desc>
+
+  <rect x="0" y="0" width="512" height="512" rx="96" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="511" height="511" rx="95.5" fill="none" stroke="#E2E8F0" stroke-width="1"/>
+
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#E2E8F0" stroke-width="24"/>
+  <path d="M 256 86 A 170 170 0 1 1 108.78 171" fill="none" stroke="#1E293B" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="108.78" cy="171" r="16" fill="#F59E0B"/>
+
+  <path d="M256 196 L176 212 L176 300 L256 316 Z" fill="#1E293B"/>
+  <path d="M256 196 L336 212 L336 300 L256 316 Z" fill="#6366F1"/>
+  <path d="M196 224 L236 216 M196 246 L236 238 M196 268 L230 261" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+  <path d="M316 224 L276 216 M316 246 L276 238 M316 268 L282 261" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+  <rect x="252" y="196" width="8" height="120" fill="#FFFFFF"/>
+</svg>
