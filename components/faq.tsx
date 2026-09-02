@@ -16,7 +16,7 @@ const QUESTIONS = [
   },
   {
     q: "O que acontece se falhar um dia?",
-    a: "A sequência volta ao princípio — é isso que a torna uma sequência. Para que aconteça poucas vezes, recebes um aviso quando o dia está quase a acabar e ainda não leste nada, além do lembrete diário à hora que escolheres.",
+    a: "O contador de dias seguidos volta ao princípio — é isso que o torna uma sequência. Tudo o resto fica na mesma: as páginas lidas, os livros acabados e o progresso de cada um. Se quiseres, podes receber um aviso quando o dia está quase a acabar sem nada registado, além do lembrete diário à hora que escolheres.",
   },
   {
     q: "Tenho de marcar o livro como terminado?",

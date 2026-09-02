@@ -13,11 +13,11 @@ const SITE_URL = "https://leituon.app";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "LeituOn — o teu coach pessoal de leitura",
+    default: "LeituOn — o teu tracker pessoal de leitura",
     template: "%s · LeituOn",
   },
   description:
-    "Aponta o que lês, mantém a sequência viva e chega ao fim dos livros que começas. O LeituOn acompanha o teu ritmo, avisa-te quando um livro fica para trás e funciona mesmo sem internet.",
+    "Regista o que lês e vê os números: páginas por dia, dias seguidos de leitura, progresso de cada livro e quanto falta para a tua meta. Funciona mesmo sem internet.",
   keywords: [
     "leitura",
     "hábito de leitura",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
     locale: "pt_PT",
     url: SITE_URL,
     siteName: "LeituOn",
-    title: "LeituOn — o teu coach pessoal de leitura",
+    title: "LeituOn — o teu tracker pessoal de leitura",
     description:
       "Sequência de leitura, metas com data marcada, notas por livro e lista de desejos. Em português, para iPhone e Android.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LeituOn — o teu coach pessoal de leitura",
+    title: "LeituOn — o teu tracker pessoal de leitura",
     description:
       "Sequência de leitura, metas com data marcada, notas por livro e lista de desejos.",
   },

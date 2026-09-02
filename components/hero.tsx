@@ -29,16 +29,16 @@ export function Hero() {
             </span>
 
             <h1 className="text-display mt-6 text-4xl font-extrabold leading-[1.08] text-ink sm:text-5xl lg:text-6xl">
-              O teu coach pessoal
+              O teu tracker pessoal
               <br />
               de <span className="text-accent">leitura</span>.
             </h1>
 
             <p className="text-pretty mt-6 max-w-xl text-lg leading-relaxed text-muted">
               Ler todos os dias raramente falha por falta de vontade. Falha
-              porque ninguém anda a fazer as contas. O LeituOn aponta o que
-              leste, diz-te quantas páginas precisas de ler por dia para acabar
-              o livro a tempo e avisa-te antes de perderes a sequência.
+              porque ninguém anda a fazer as contas. O LeituOn regista o que
+              leste e mostra-te os números: páginas por dia, quanto falta para
+              acabar cada livro e há quantos dias seguidos não falhas.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">

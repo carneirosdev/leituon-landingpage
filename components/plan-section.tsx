@@ -4,7 +4,7 @@ import { SectionHeading } from "./section-heading";
 const PACE = [
   {
     label: "Adiantado",
-    body: "Vais à frente do necessário. Podes abrandar sem risco.",
+    body: "Vais à frente do que era preciso para chegar à data marcada.",
     color: "text-ahead",
     dot: "bg-ahead",
   },
@@ -16,7 +16,7 @@ const PACE = [
   },
   {
     label: "Atrasado",
-    body: "Ao ritmo de agora não chegas a tempo — e a app diz-te quantas páginas por dia faltam.",
+    body: "Ao ritmo de agora não chegas à data — a app mostra quantas páginas por dia seriam precisas.",
     color: "text-behind",
     dot: "bg-behind",
   },

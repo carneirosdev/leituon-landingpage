@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "LeituOn — o teu coach pessoal de leitura";
+export const alt = "LeituOn — o teu tracker pessoal de leitura";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -90,7 +90,7 @@ export default function OpengraphImage() {
             <span style={{ color: "#f59e0b" }}>On</span>
           </div>
           <div style={{ display: "flex", marginTop: 16, fontSize: 40, color: "#cbd5e1" }}>
-            O teu coach pessoal de leitura
+            O teu tracker pessoal de leitura
           </div>
           <div
             style={{

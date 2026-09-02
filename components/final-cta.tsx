@@ -21,11 +21,11 @@ export function FinalCta() {
             <LeituOnMark className="mx-auto h-14 w-14 text-ink" />
 
             <h2 className="text-display mx-auto mt-7 max-w-2xl text-3xl font-extrabold text-ink sm:text-4xl">
-              O melhor dia para começar uma sequência é hoje
+              Tudo o que leres, registado e contado
             </h2>
             <p className="text-pretty mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted sm:text-lg">
               Um livro, o número de páginas, uma data. O LeituOn trata das contas
-              — e lembra-te antes de o dia acabar.
+              e guarda o histórico de tudo o que já leste.
             </p>
 
             <div className="mt-10">

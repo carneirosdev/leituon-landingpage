@@ -1,7 +1,7 @@
 # LeituOn — Landing page
 
-Página de apresentação da app [LeituOn], o coach pessoal de
-leitura. Construída em **Next.js 16** (App Router), **React 19**, **TypeScript**
+
+Página de apresentação da app [LeituOn](../leituon-app), o tracker pessoal de leitura. Construída em **Next.js 16** (App Router), **React 19**, **TypeScript**
 e **Tailwind CSS v4**, e servida como página estática.
 
 ## Arrancar

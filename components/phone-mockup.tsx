@@ -66,7 +66,7 @@ export function PhoneMockup() {
               <div className="leading-tight">
                 <p className="text-lg font-extrabold">12 dias seguidos</p>
                 <p className="text-[0.68rem] font-medium opacity-80">
-                  Lê hoje para não quebrar a sequência.
+                  Último registo: hoje, 18 páginas.
                 </p>
               </div>
             </div>

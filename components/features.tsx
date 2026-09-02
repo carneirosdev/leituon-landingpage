@@ -11,14 +11,14 @@ type Feature = {
 
 const FEATURES: Feature[] = [
   {
-    title: "Sequência que não te deixa parar",
-    body: "Cada dia em que leste alguma coisa soma um dia à sequência. Se o dia estiver a acabar e ainda não tiveres lido, a app avisa-te antes de a perderes.",
+    title: "A sequência conta-se sozinha",
+    body: "Cada dia em que registas leitura soma um dia à sequência, e vês logo há quantos dias seguidos vais. Se o dia estiver a acabar sem registo, a app pode avisar-te — só se quiseres.",
     icon: "M13.5 2c.6 3.2-.7 4.9-2.3 6.5C9.4 10.2 8 11.8 8 14.5a6 6 0 0 0 12 .3c0-2-.8-3.6-1.9-5.1-.3 1-.9 1.7-1.7 2 .6-3.6-1-6.7-2.9-9.7Z",
     accent: "accent",
   },
   {
     title: "Uma meta com data marcada",
-    body: "Escolhes quantos livros queres ler em três meses, seis meses ou um ano. A app faz as contas e diz-te se o teu ritmo chega para lá chegar — a tempo de o corrigires.",
+    body: "Escolhes quantos livros queres ler em três meses, seis meses ou um ano. A app faz as contas e mostra-te quantos já levas, quantos faltam e se o ritmo até agora chega para a data.",
     icon: "M8 3v3M16 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1ZM9 14l2 2 4-4",
     accent: "second",
   },
@@ -44,7 +44,7 @@ const FEATURES: Feature[] = [
   },
   {
     title: "Lembretes que escolhes",
-    body: "Um toque diário à hora que te der jeito e um aviso quando a sequência está prestes a cair. Desligas os dois quando quiseres — e a app não te pede nada disso logo na primeira abertura.",
+    body: "Um toque diário à hora que te der jeito e um aviso quando o dia está a acabar sem nada registado. Desligas os dois quando quiseres — e a app não te pede nada disso logo na primeira abertura.",
     icon: "M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6M13.7 20a2 2 0 0 1-3.4 0",
   },
   {
@@ -68,8 +68,8 @@ export function Features() {
             eyebrow="Funcionalidades"
             title={
               <>
-                Tudo o que faltava entre <em className="not-italic text-accent">querer</em> ler
-                e ler mesmo
+                Tudo o que leste, <em className="not-italic text-accent">em números</em>,
+                no mesmo sítio
               </>
             }
             description="Está tudo ligado entre si: basta apontares o que leste para a sequência, o progresso do livro, as contas da semana e a tua meta mudarem de uma só vez."
