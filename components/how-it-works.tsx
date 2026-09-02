@@ -14,8 +14,8 @@ const STEPS = [
   },
   {
     n: "03",
-    title: "Deixa o ritmo guiar-te",
-    body: "Sempre que abres a app vês onde estás: a sequência de pé, as páginas da semana e qual o livro que precisa de atenção para a data não fugir.",
+    title: "Vê onde estás",
+    body: "Sempre que abres a app tens os números à frente: os dias seguidos de leitura, as páginas da semana e o estado de cada livro face à data que marcaste.",
   },
 ];
 
